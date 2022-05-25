@@ -1445,6 +1445,11 @@ h6 {
   padding-right: 10px;
 }
 
+.choices__list--dropdown .choices__item--selectable,
+.choices__list[aria-expanded] .choices__item--selectable {
+  padding-right: 15px;
+}
+
 .mission {
   background: #f8f9fb;
   overflow: hidden;
