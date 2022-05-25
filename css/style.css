@@ -1447,7 +1447,7 @@ h6 {
 
 .choices__list--dropdown .choices__item--selectable,
 .choices__list[aria-expanded] .choices__item--selectable {
-  padding-right: 15px;
+  padding-right: 15px !important;
 }
 
 .mission {
