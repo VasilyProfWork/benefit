@@ -1185,25 +1185,25 @@ h6 {
 }
 @media (max-width: 1200px) {
   .top__image {
-    margin-right: 0;
+    margin-right: 0 !important;
   }
 }
 @media (max-width: 61.99875em) {
   .top__image {
     flex: 0 0 466px;
-    margin-top: auto;
+    margin-top: auto !important;
   }
 }
 @media (max-width: 815px) {
   .top__image {
     margin-top: 0;
     margin-left: 0;
-    flex: 0 0 400px;
+    flex: 0 0 400px !important;
   }
 }
 @media (max-width: 29.99875em) {
   .top__image {
-    flex: 0 0 270px;
+    flex: 0 0 270px !important;
   }
 }
 
