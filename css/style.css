@@ -678,13 +678,11 @@ h6 {
   font-size: 16px;
   line-height: 20px;
   display: block;
+  color: #4a4949;
 }
 @media (max-width: 29.99875em) {
   .header__adress {
     max-width: 150px;
-  }
-  .header__adress span {
-    font-size: 14px;
   }
   .header__adress img {
     display: none;
@@ -703,13 +701,16 @@ h6 {
   line-height: 20px;
   display: block;
   transition: all 0.3s ease 0s;
+  color: #4a4949;
 }
 .header__phone a:hover {
   text-decoration: underline;
 }
 @media (max-width: 29.99875em) {
+  .header__phone {
+    text-align: right;
+  }
   .header__phone a {
-    font-size: 14px;
     white-space: nowrap;
   }
   .header__phone img {
@@ -1051,6 +1052,7 @@ h6 {
   text-transform: uppercase;
   color: #4a4949;
   transition: all 0.3s ease 0s;
+  white-space: nowrap;
 }
 .footer__link:hover {
   text-decoration: underline;
@@ -1362,13 +1364,14 @@ h6 {
 }
 .selection__content {
   padding-top: 90px;
-  padding-bottom: 75px;
+  padding-bottom: 41px;
   padding-right: 15px;
   padding-left: 15px;
   text-align: center;
-  max-width: 356px;
+  max-width: 385px;
   margin: 0 auto;
   max-height: 300px;
+  overflow: hidden;
 }
 .selection__subtitle {
   font-family: "Palatino Linotype";
@@ -1378,6 +1381,8 @@ h6 {
   line-height: 30px;
   color: #ee733e;
   margin-bottom: 10px;
+  max-width: 100%;
+  white-space: nowrap;
 }
 .selection__text {
   font-weight: 500;
@@ -1403,6 +1408,9 @@ h6 {
   width: 100%;
   height: 100%;
   z-index: -1;
+}
+.selection__image-ibg img {
+  border-radius: 5px;
 }
 
 .choices__inner {
