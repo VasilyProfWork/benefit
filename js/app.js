@@ -3530,6 +3530,11 @@
             spaceBetween: 0,
             autoHeight: false,
             speed: 800,
+            effect: "fade",
+            autoplay: {
+                delay: 3e3,
+                disableOnInteraction: false
+            },
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true
