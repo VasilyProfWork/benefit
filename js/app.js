@@ -3584,6 +3584,16 @@
             },
             on: {}
         });
+        if (document.querySelector(".swiper4")) new core(".swiper4", {
+            modules: [],
+            observer: true,
+            observeParents: true,
+            slidesPerView: "auto",
+            spaceBetween: 30,
+            autoHeight: true,
+            speed: 800,
+            on: {}
+        });
     }
     window.addEventListener("load", (function(e) {
         initSliders();
@@ -6872,6 +6882,37 @@
         }));
     }
     mascTel();
+    let deleteItem = document.querySelectorAll(".delete_item");
+    for (let elem of deleteItem) elem.addEventListener("click", (function() {
+        let itemBody = this.closest(".base__item");
+        if (itemBody.classList.contains("active-base")) itemBody.classList.remove("active-base");
+    }));
+    let filterBtn = document.querySelector(".filter_btn_activ");
+    let buttonSpan = document.querySelector(".button-span");
+    let baseFilter = document.querySelector(".base__filter");
+    filterBtn.addEventListener("click", (function(e) {
+        filterBtn.classList.toggle("filter-activ");
+        if (filterBtn.classList.contains("filter-activ")) buttonSpan.textContent = "Скрыть фильтр"; else {
+            filterBtn.classList.remove("filter-activ");
+            buttonSpan.textContent = "Настроить фильтр";
+        }
+        baseFilter.classList.toggle("filter-activ");
+        window.addEventListener("click", (e => {
+            const target = e.target;
+            if (!target.closest(".base__filter") && !target.closest(".filter_btn_activ")) {
+                baseFilter.classList.remove("filter-activ");
+                filterBtn.classList.remove("filter-activ");
+                buttonSpan.textContent = "Настроить фильтр";
+            }
+        }));
+    }));
+    document.getElementById("horizontal-scroller").addEventListener("wheel", (function(event) {
+        if (event.deltaMode == event.DOM_DELTA_PIXEL) var modifier = 1; else if (event.deltaMode == event.DOM_DELTA_LINE) modifier = parseInt(getComputedStyle(this).lineHeight); else if (event.deltaMode == event.DOM_DELTA_PAGE) modifier = this.clientHeight;
+        if (0 != event.deltaY) {
+            this.scrollLeft += modifier * event.deltaY;
+            event.preventDefault();
+        }
+    }));
     window["FLS"] = true;
     isWebp();
 })();

@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220527130723">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__body">
+					<button type="button" class="menu__icon icon-menu"><span></span>
+						<div class="close">Закрыть</div>
+					</button>
+					<a href="#" class="header__logo">
+						<picture><source srcset="img/header/logo.webp" type="image/webp"><img src="img/header/logo.png" alt="Логотип сайта"></picture>
+					</a>
+					<div class="header__feedback">
+						<div class="header__adress">
+							<img src="img/header/location.svg" alt="Адресс нашей компании">
+							<p><span>г. Красноярск</span>Ул. проспект Мира, 199 оф. 505</p>
+						</div>
+						<div class="header__phone">
+							<img src="img/header/phone.svg" alt="Телефон нашей компании">
+							<p><a href="tel:+73919996677">+7 (391) 999-66-77</a>Заказать звонок</p>
+						</div>
+					</div>
+					<div class="header__box">
+						<div class="header__search">
+							<a href="#" class="js-open-modal" data-modal="1">
+								<img src="img/header/search.svg" alt="Поиск наших услуг">
+							</a>
+						</div>
+						<div class="header__user">
+							<a href="#">
+								<img src="img/header/user.svg" alt="Войдите в аккаунт">
+							</a>
+						</div>
+					</div>
+					<div class="header__button">
+						<a href="#" class="button-dark-winter">Нанять сиделку</a>
+					</div>
+					<div class="header__menu menu">
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
+								<li class="menu__item"><a href="#" class="menu__link">О компании</a></li>
+								<li class="menu__item"><a href="base.html" class="menu__link">База сиделок</a></li>
+								<li class="menu__item"><a href="#" class="menu__link">Оплата</a></li>
+								<li class="menu__item"><a href="#" class="menu__link">Отзывы</a></li>
+								<li class="menu__item"><a href="#" class="menu__link">Вопросы и ответы</a></li>
+								<li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="base">
+				<div class="base__container">
+					<div class="base__body">
+						<div class="base__filter filter ">
+							<div class="filter__body">
+								<div class="filter__title">
+									<h3>Подобрать по фильтру:</h3>
+								</div>
+								<div class="filter__list">
+									<div class="filter__item">
+										<select class="js-choice">
+											<option value="">Район</option>
+											<option>Район</option>
+											<option>Район</option>
+											<option>Район</option>
+										</select>
+									</div>
+									<div class="filter__item">
+										<select class="js-choice">
+											<option value="">от 25 лет</option>
+											<option>от 25 лет</option>
+											<option>от 25 лет</option>
+											<option>от 25 лет</option>
+										</select>
+									</div>
+									<div class="filter__item">
+										<select class="js-choice">
+											<option value="">Опыт ухода(более)</option>
+											<option>Опыт ухода(более)</option>
+											<option>Опыт ухода(более)</option>
+											<option>Опыт ухода(более)</option>
+										</select>
+									</div>
+									<div class="filter__item">
+										<select class="js-choice">
+											<option value="">до 80 кг</option>
+											<option>до 80 кг</option>
+											<option>до 80 кг</option>
+											<option>до 80 кг</option>
+										</select>
+									</div>
+									<div class="filter__item">
+										<select class="js-choice">
+											<option value="">Пн-пт</option>
+											<option>Пн-пт</option>
+											<option>Пн-пт</option>
+											<option>Пн-пт</option>
+										</select>
+									</div>
+									<div class="filter__item">
+										<select class="js-choice">
+											<option value="">С чем умеет работать</option>
+											<option>С чем умеет работать</option>
+											<option>С чем умеет работать</option>
+											<option>С чем умеет работать</option>
+										</select>
+									</div>
+									<div class="filter__item">
+										<select class="js-choice">
+											<option value="">Национальность</option>
+											<option>Национальность</option>
+											<option>Национальность</option>
+											<option>Национальность</option>
+										</select>
+									</div>
+									<div class="filter__item">
+										<select class="js-choice">
+											<option value="">Работа с диагнозами</option>
+											<option>Работа с диагнозами</option>
+											<option>Работа с диагнозами</option>
+											<option>Работа с диагнозами</option>
+										</select>
+									</div>
+									<div class="filter__item">
+										<select class="js-choice">
+											<option value="">Справки, дипломы</option>
+											<option>Справки, дипломы</option>
+											<option>Справки, дипломы</option>
+											<option>Справки, дипломы</option>
+										</select>
+									</div>
+									<div class="filter__item">
+										<select class="js-choice">
+											<option value="">Высшее</option>
+											<option>Высшее</option>
+											<option>Высшее</option>
+											<option>Высшее</option>
+										</select>
+									</div>
+									<div class="filter__item">
+										<select class="js-choice">
+											<option value="">Уход за мужчинами</option>
+											<option>Уход за мужчинами</option>
+											<option>Уход за мужчинами</option>
+											<option>Уход за мужчинами</option>
+										</select>
+									</div>
+									<div class="filter__button">
+										<button class="filter__btn button-dark-winter">Подобрать</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="base__box">
+							<div class="base__title title">
+								<h2>База сиделок</h2>
+							</div>
+							<div class="base__button">
+								<button class="filter_btn_activ">
+									<img src="img/base/filter.svg" alt="Иконка фильтра">
+									<span class="button-span">Настроить фильтр</span>
+								</button>
+							</div>
+							<div class="base__default">
+								<div class="base__name">
+									<span>Сортировать:</span>
+								</div>
+								<div class="base__sort">
+									<select class="js-choice">
+										<option value="">По умолчанию</option>
+										<option>По умолчанию</option>
+										<option>По умолчанию</option>
+										<option>По умолчанию</option>
+									</select>
+								</div>
+							</div>
+							<div class="base__show">
+								<div class="base__name base__name_m">
+									<span>Показать:</span>
+								</div>
+								<div class="base__number-show">
+									<select class="js-choice">
+										<option value="">12</option>
+										<option>24</option>
+										<option>32</option>
+										<option>48</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="base__list ">
+								<div class="base__box-inner ">
+									<div class="base__inner-box" id="horizontal-scroller">
+
+										<div class="base__item active-base">
+											<button class="base__item_btn">
+												<span>от 25 лет</span>
+												<img class="delete_item" src="img/base/close.svg" alt="Удалить элемент">
+											</button>
+										</div>
+										<div class="base__item active-base">
+
+											<button class="base__item_btn">
+												<span>до 80 кг</span>
+												<img class="delete_item" src="img/base/close.svg" alt="Удалить элемент">
+											</button>
+										</div>
+										<div class="base__item active-base">
+											<button class="base__item_btn">
+												<span>Пн-пт</span>
+												<img class="delete_item" src="img/base/close.svg" alt="Удалить элемент">
+											</button>
+										</div>
+										<div class="base__item active-base">
+											<button class="base__item_btn">
+												<span>Высшее</span>
+												<img class="delete_item" src="img/base/close.svg" alt="Удалить элемент">
+											</button>
+										</div>
+										<div class="base__item active-base">
+											<button class="base__item_btn">
+												<span>от 25 лет</span>
+												<img class="delete_item" src="img/base/close.svg" alt="Удалить элемент">
+											</button>
+										</div>
+										<div class="base__item active-base">
+											<button class="base__item_btn">
+												<span>от 25 лет</span>
+												<img class="delete_item" src="img/base/close.svg" alt="Удалить элемент">
+											</button>
+										</div>
+										<div class="base__item active-base">
+											<button class="base__item_btn">
+												<span>от 25 лет</span>
+												<img class="delete_item" src="img/base/close.svg" alt="Удалить элемент">
+											</button>
+										</div>
+										<div class="base__item active-base">
+											<button class="base__item_btn">
+												<span>от 25 лет</span>
+												<img class="delete_item" src="img/base/close.svg" alt="Удалить элемент">
+											</button>
+										</div>
+										<div class="base__item active-base">
+											<button class="base__item_btn">
+												<span>от 25 лет</span>
+												<img class="delete_item" src="img/base/close.svg" alt="Удалить элемент">
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="base__cards cards">
+								<div class="cards__row">
+									<div class="cards__avatar">
+										<picture><source srcset="img/base/avatar1.webp" type="image/webp"><img src="img/base/avatar1.jpg" alt="Аватар"></picture>
+									</div>
+									<div class="cards__box">
+										<div class="cards__name">
+											<span>Надежда Александровна И.</span>
+										</div>
+										<div class="cards__price">
+											<span>От 350 ₽/час</span>
+										</div>
+										<div class="cards__stars">
+											<div class="simple-rating">
+												<div class="simple-rating__items">
+													<input id="simple-rating__5" type="radio" class="simple-rating__item" name="simple-rating" value="5">
+													<label for="simple-rating__5" class="simple-rating__label"></label>
+													<input id="simple-rating__4" type="radio" class="simple-rating__item" checked name="simple-rating" value="4">
+													<label for="simple-rating__4" class="simple-rating__label"></label>
+													<input id="simple-rating__3" type="radio" class="simple-rating__item" name="simple-rating" value="3">
+													<label for="simple-rating__3" class="simple-rating__label"></label>
+													<input id="simple-rating__2" type="radio" class="simple-rating__item" name="simple-rating" value="2">
+													<label for="simple-rating__2" class="simple-rating__label"></label>
+													<input id="simple-rating__1" type="radio" class="simple-rating__item" name="simple-rating" value="1">
+													<label for="simple-rating__1" class="simple-rating__label"></label>
+												</div>
+											</div>
+										</div>
+										<div class="cards__inner">
+											<div class="cards__years">
+												<span>50 лет</span>
+											</div>
+											<div class="cards__expirience">
+												<span>3 года опыта</span>
+											</div>
+										</div>
+										<div class="cards__location">
+											<img src="img/base/location.svg" alt="Локация">
+											<span>Красноярск, Кировский</span>
+											<a href="#">Показать на карте</a>
+										</div>
+										<div class="cards__work">
+											<span>Полная</span>
+											<span>Частичная</span>
+											<span>С проживанием</span>
+										</div>
+										<div class="cards__phone cards__phone_m">
+											<img src="img/base/phone.svg" alt="Телефон">
+											<a href="tel:+79139546307">+7 (913) 954-63-07</a>
+										</div>
+									</div>
+									<div class="cards____newloc">
+										<div class="cards__location newloc">
+											<img src="img/base/location.svg" alt="Локация">
+											<span>Красноярск, Кировский</span>
+											<a href="#">Показать на карте</a>
+										</div>
+									</div>
+									<div class="cards__newwork">
+										<div class="cards__work newloc">
+											<span>Полная</span>
+											<span>Частичная</span>
+											<span>С проживанием</span>
+										</div>
+									</div>
+									<div class="cards__newphone">
+										<div class="cards__phone cards__phone_m newloc">
+											<img src="img/base/phone.svg" alt="Телефон">
+											<a href="tel:+79139546307">+7 (913) 954-63-07</a>
+										</div>
+									</div>
+									<div class="cards__desc">
+										<p>Спокойная, исполнительная, интересный собеседник.Гигиена, выполнение
+											предписаний врача, внутримышечные уколы, приготовление пищи, уборка.
+											Ухаживала за престарелыми родственниками, сопровождала в клиники
+											(онкология,
+											после инсульта, после инфаркта).</p>
+									</div>
+									<div class="cards__education">
+										<a href="#">
+											<img src="img/base/medical.svg" alt="Картинка">
+											<span>Высшее медицинское образование</span>
+										</a>
+									</div>
+									<div class="cards__buttons">
+										<button class="cards__more button-dark-winter">Подробнее</button>
+										<button class="cards__hire button-dark-winter">Нанять сиделку</button>
+									</div>
+								</div>
+								<div class="cards__row">
+									<div class="cards__avatar">
+										<picture><source srcset="img/base/avatar2.webp" type="image/webp"><img src="img/base/avatar2.jpg" alt="Аватар"></picture>
+									</div>
+									<div class="cards__box">
+										<div class="cards__name">
+											<span>Валерия николаевна С.</span>
+										</div>
+										<div class="cards__price">
+											<span>От 450 ₽/час</span>
+										</div>
+										<div class="cards__stars">
+											<div class="simple-rating">
+												<div class="simple-rating__items">
+													<input id="simple-rating__10" type="radio" class="simple-rating__item" checked name="simple-rating1" value="5">
+													<label for="simple-rating__10" class="simple-rating__label"></label>
+													<input id="simple-rating__9" type="radio" class="simple-rating__item" name="simple-rating1" value="4">
+													<label for="simple-rating__9" class="simple-rating__label"></label>
+													<input id="simple-rating__8" type="radio" class="simple-rating__item" name="simple-rating1" value="3">
+													<label for="simple-rating__8" class="simple-rating__label"></label>
+													<input id="simple-rating__7" type="radio" class="simple-rating__item" name="simple-rating1" value="2">
+													<label for="simple-rating__7" class="simple-rating__label"></label>
+													<input id="simple-rating__6" type="radio" class="simple-rating__item" name="simple-rating1" value="1">
+													<label for="simple-rating__6" class="simple-rating__label"></label>
+												</div>
+											</div>
+										</div>
+										<div class="cards__inner">
+											<div class="cards__years">
+												<span>27 лет</span>
+											</div>
+											<div class="cards__expirience">
+												<span>1 года опыта</span>
+											</div>
+										</div>
+										<div class="cards__location">
+											<img src="img/base/location.svg" alt="Локация">
+											<span>Красноярск, Ленинский</span>
+											<a href="#">Показать на карте</a>
+										</div>
+										<div class="cards__work">
+											<span>Полная</span>
+											<span>Частичная</span>
+											<span>С проживанием</span>
+										</div>
+										<div class="cards__phone">
+											<img src="img/base/phone.svg" alt="Телефон">
+											<a href="tel:+79139546307">+7 (913) 954-63-07</a>
+										</div>
+									</div>
+									<div class="cards____newloc">
+										<div class="cards__location newloc">
+											<img src="img/base/location.svg" alt="Локация">
+											<span>Красноярск, Ленинский</span>
+											<a href="#">Показать на карте</a>
+										</div>
+									</div>
+									<div class="cards__newwork">
+										<div class="cards__work newloc">
+											<span>Полная</span>
+											<span>Частичная</span>
+											<span>С проживанием</span>
+										</div>
+									</div>
+									<div class="cards__desc">
+										<p>сем доброго времени суток. :) заканчиваю мед. училище, веселая,
+											жизнерадостная девушка:) очень люблю детей:) Родилась в многодетной
+											семье(нас 7 детей), опыт работы 5 лет, работала в семье, где 4 детей,
+											погодки маленькие, с рождения старшего. Буду рада помочь, тем кто в этом
+											нуждается. :)</p>
+									</div>
+									<div class="cards__education">
+										<a href="#">
+											<img src="img/base/medical.svg" alt="Картинка">
+											<span>Курсы оказания первой помощи</span>
+										</a>
+									</div>
+									<div class="cards__buttons">
+										<button class="cards__more button-dark-winter">Подробнее</button>
+										<button class="cards__hire button-dark-winter">Нанять сиделку</button>
+									</div>
+								</div>
+								<div class="cards__row">
+									<div class="cards__avatar">
+										<picture><source srcset="img/base/avatar3.webp" type="image/webp"><img src="img/base/avatar3.jpg" alt="Аватар"></picture>
+									</div>
+									<div class="cards__box">
+										<div class="cards__name">
+											<span>Александра борисовна К.</span>
+										</div>
+										<div class="cards__price">
+											<span>От 250 ₽/час</span>
+										</div>
+										<div class="cards__stars">
+											<div class="simple-rating">
+												<div class="simple-rating__items">
+													<input id="simple-rating__15" type="radio" class="simple-rating__item" name="simple-rating2" value="5">
+													<label for="simple-rating__15" class="simple-rating__label"></label>
+													<input id="simple-rating__14" type="radio" class="simple-rating__item" name="simple-rating2" value="4">
+													<label for="simple-rating__14" class="simple-rating__label"></label>
+													<input id="simple-rating__13" type="radio" class="simple-rating__item" checked name="simple-rating2" value="3">
+													<label for="simple-rating__13" class="simple-rating__label"></label>
+													<input id="simple-rating__12" type="radio" class="simple-rating__item" name="simple-rating2" value="2">
+													<label for="simple-rating__12" class="simple-rating__label"></label>
+													<input id="simple-rating__11" type="radio" class="simple-rating__item" name="simple-rating2" value="1">
+													<label for="simple-rating__11" class="simple-rating__label"></label>
+												</div>
+											</div>
+										</div>
+										<div class="cards__inner">
+											<div class="cards__years">
+												<span>42 года</span>
+											</div>
+											<div class="cards__expirience">
+												<span>3 года опыта</span>
+											</div>
+										</div>
+										<div class="cards__location">
+											<img src="img/base/location.svg" alt="Локация">
+											<span>Красноярск, Октябрьский</span>
+											<a href="#">Показать на карте</a>
+										</div>
+										<div class="cards__work">
+											<span>Полная</span>
+											<span>Частичная</span>
+											<span>С проживанием</span>
+										</div>
+										<div class="cards__phone">
+											<img src="img/base/phone.svg" alt="Телефон">
+											<a href="tel:+79139546307">+7 (913) 954-63-07</a>
+										</div>
+									</div>
+									<div class="cards____newloc">
+										<div class="cards__location newloc">
+											<img src="img/base/location.svg" alt="Локация">
+											<span>Красноярск, Кировский</span>
+											<a href="#">Показать на карте</a>
+										</div>
+									</div>
+									<div class="cards__newwork">
+										<div class="cards__work newloc">
+											<span>Полная</span>
+											<span>Частичная</span>
+											<span>С проживанием</span>
+										</div>
+									</div>
+									<div class="cards__desc">
+										<p>Мне 42 года, имею высшее педагогическое образование, замужем, двое детей,
+											огромный опыт работы с детьми разного возраста, в данный момент работаю
+											с
+											двумя подопечными пожилыми людьми, как компаньон, помогаю в быту,
+											поддерживаю беседу. Ухаживала за больными сахарным диабетом.</p>
+									</div>
+									<div class="cards__education">
+										<a href="#">
+											<img src="img/base/medical.svg" alt="Картинка">
+											<span>Высшее образование, Курсы сиделок</span>
+										</a>
+									</div>
+									<div class="cards__buttons">
+										<button class="cards__more button-dark-winter">Подробнее</button>
+										<button class="cards__hire button-dark-winter">Нанять сиделку</button>
+									</div>
+								</div>
+								<div class="cards__row">
+									<div class="cards__avatar">
+										<picture><source srcset="img/base/avatar1.webp" type="image/webp"><img src="img/base/avatar1.jpg" alt="Аватар"></picture>
+									</div>
+									<div class="cards__box">
+										<div class="cards__name">
+											<span>Надежда Александровна И.</span>
+										</div>
+										<div class="cards__price">
+											<span>От 350 ₽/час</span>
+										</div>
+										<div class="cards__stars">
+											<div class="simple-rating">
+												<div class="simple-rating__items">
+													<input id="simple-rating__20" type="radio" class="simple-rating__item" name="simple-rating3" value="5">
+													<label for="simple-rating__20" class="simple-rating__label"></label>
+													<input id="simple-rating__19" type="radio" class="simple-rating__item" checked name="simple-rating3" value="4">
+													<label for="simple-rating__19" class="simple-rating__label"></label>
+													<input id="simple-rating__18" type="radio" class="simple-rating__item" name="simple-rating3" value="3">
+													<label for="simple-rating__18" class="simple-rating__label"></label>
+													<input id="simple-rating__17" type="radio" class="simple-rating__item" name="simple-rating3" value="2">
+													<label for="simple-rating__17" class="simple-rating__label"></label>
+													<input id="simple-rating__16" type="radio" class="simple-rating__item" name="simple-rating3" value="1">
+													<label for="simple-rating__16" class="simple-rating__label"></label>
+												</div>
+											</div>
+										</div>
+										<div class="cards__inner">
+											<div class="cards__years">
+												<span>50 лет</span>
+											</div>
+											<div class="cards__expirience">
+												<span>3 года опыта</span>
+											</div>
+										</div>
+										<div class="cards__location">
+											<img src="img/base/location.svg" alt="Локация">
+											<span>Красноярск, Кировский</span>
+											<a href="#">Показать на карте</a>
+										</div>
+										<div class="cards__work">
+											<span>Полная</span>
+											<span>Частичная</span>
+											<span>С проживанием</span>
+										</div>
+										<div class="cards__phone">
+											<img src="img/base/phone.svg" alt="Телефон">
+											<a href="tel:+79139546307">+7 (913) 954-63-07</a>
+										</div>
+									</div>
+									<div class="cards____newloc">
+										<div class="cards__location newloc">
+											<img src="img/base/location.svg" alt="Локация">
+											<span>Красноярск, Кировский</span>
+											<a href="#">Показать на карте</a>
+										</div>
+									</div>
+									<div class="cards__newwork">
+										<div class="cards__work newloc">
+											<span>Полная</span>
+											<span>Частичная</span>
+											<span>С проживанием</span>
+										</div>
+									</div>
+									<div class="cards__desc">
+										<p>Спокойная, исполнительная, интересный собеседник.Гигиена, выполнение
+											предписаний врача, внутримышечные уколы, приготовление пищи, уборка.
+											Ухаживала за престарелыми родственниками, сопровождала в клиники
+											(онкология,
+											после инсульта, после инфаркта).</p>
+									</div>
+									<div class="cards__education">
+										<a href="#">
+											<img src="img/base/medical.svg" alt="Картинка">
+											<span>Высшее медицинское образование</span>
+										</a>
+									</div>
+									<div class="cards__buttons">
+										<button class="cards__more button-dark-winter">Подробнее</button>
+										<button class="cards__hire button-dark-winter">Нанять сиделку</button>
+									</div>
+								</div>
+								<div class="cards__row">
+									<div class="cards__avatar">
+										<picture><source srcset="img/base/avatar2.webp" type="image/webp"><img src="img/base/avatar2.jpg" alt="Аватар"></picture>
+									</div>
+									<div class="cards__box">
+										<div class="cards__name">
+											<span>Валерия николаевна С.</span>
+										</div>
+										<div class="cards__price">
+											<span>От 450 ₽/час</span>
+										</div>
+										<div class="cards__stars">
+											<div class="simple-rating">
+												<div class="simple-rating__items">
+													<input id="simple-rating__25" type="radio" class="simple-rating__item" name="simple-rating4" value="5">
+													<label for="simple-rating__25" class="simple-rating__label"></label>
+													<input id="simple-rating__24" type="radio" class="simple-rating__item" checked name="simple-rating4" value="4">
+													<label for="simple-rating__24" class="simple-rating__label"></label>
+													<input id="simple-rating__23" type="radio" class="simple-rating__item" name="simple-rating4" value="3">
+													<label for="simple-rating__23" class="simple-rating__label"></label>
+													<input id="simple-rating__22" type="radio" class="simple-rating__item" name="simple-rating4" value="2">
+													<label for="simple-rating__22" class="simple-rating__label"></label>
+													<input id="simple-rating__21" type="radio" class="simple-rating__item" name="simple-rating4" value="1">
+													<label for="simple-rating__21" class="simple-rating__label"></label>
+												</div>
+											</div>
+										</div>
+										<div class="cards__inner">
+											<div class="cards__years">
+												<span>27 лет</span>
+											</div>
+											<div class="cards__expirience">
+												<span>1 года опыта</span>
+											</div>
+										</div>
+										<div class="cards__location">
+											<img src="img/base/location.svg" alt="Локация">
+											<span>Красноярск, Ленинский</span>
+											<a href="#">Показать на карте</a>
+										</div>
+										<div class="cards__work">
+											<span>Полная</span>
+											<span>Частичная</span>
+											<span>С проживанием</span>
+										</div>
+										<div class="cards__phone">
+											<img src="img/base/phone.svg" alt="Телефон">
+											<a href="tel:+79139546307">+7 (913) 954-63-07</a>
+										</div>
+									</div>
+									<div class="cards____newloc">
+										<div class="cards__location newloc">
+											<img src="img/base/location.svg" alt="Локация">
+											<span>Красноярск, Ленинский</span>
+											<a href="#">Показать на карте</a>
+										</div>
+									</div>
+									<div class="cards__newwork">
+										<div class="cards__work newloc">
+											<span>Полная</span>
+											<span>Частичная</span>
+											<span>С проживанием</span>
+										</div>
+									</div>
+									<div class="cards__desc">
+										<p>сем доброго времени суток. :) заканчиваю мед. училище, веселая,
+											жизнерадостная девушка:) очень люблю детей:) Родилась в многодетной
+											семье(нас 7 детей), опыт работы 5 лет, работала в семье, где 4 детей,
+											погодки маленькие, с рождения старшего. Буду рада помочь, тем кто в этом
+											нуждается. :)</p>
+									</div>
+									<div class="cards__education">
+										<a href="#">
+											<img src="img/base/medical.svg" alt="Картинка">
+											<span>Курсы оказания первой помощи</span>
+										</a>
+									</div>
+									<div class="cards__buttons">
+										<button class="cards__more button-dark-winter">Подробнее</button>
+										<button class="cards__hire button-dark-winter">Нанять сиделку</button>
+									</div>
+								</div>
+								<div class="cards__row">
+									<div class="cards__avatar">
+										<picture><source srcset="img/base/avatar3.webp" type="image/webp"><img src="img/base/avatar3.jpg" alt="Аватар"></picture>
+									</div>
+									<div class="cards__box">
+										<div class="cards__name">
+											<span>Александра борисовна К.</span>
+										</div>
+										<div class="cards__price">
+											<span>От 250 ₽/час</span>
+										</div>
+										<div class="cards__stars">
+											<div class="simple-rating">
+												<div class="simple-rating__items">
+													<input id="simple-rating__30" type="radio" class="simple-rating__item" name="simple-rating5" value="5">
+													<label for="simple-rating__30" class="simple-rating__label"></label>
+													<input id="simple-rating__29" type="radio" class="simple-rating__item" checked name="simple-rating5" value="4">
+													<label for="simple-rating__29" class="simple-rating__label"></label>
+													<input id="simple-rating__28" type="radio" class="simple-rating__item" name="simple-rating5" value="3">
+													<label for="simple-rating__28" class="simple-rating__label"></label>
+													<input id="simple-rating__27" type="radio" class="simple-rating__item" name="simple-rating5" value="2">
+													<label for="simple-rating__27" class="simple-rating__label"></label>
+													<input id="simple-rating__26" type="radio" class="simple-rating__item" name="simple-rating5" value="1">
+													<label for="simple-rating__26" class="simple-rating__label"></label>
+												</div>
+											</div>
+										</div>
+										<div class="cards__inner">
+											<div class="cards__years">
+												<span>42 года</span>
+											</div>
+											<div class="cards__expirience">
+												<span>3 года опыта</span>
+											</div>
+										</div>
+										<div class="cards__location">
+											<img src="img/base/location.svg" alt="Локация">
+											<span>Красноярск, Октябрьский</span>
+											<a href="#">Показать на карте</a>
+										</div>
+										<div class="cards__work">
+											<span>Полная</span>
+											<span>Частичная</span>
+											<span>С проживанием</span>
+										</div>
+										<div class="cards__phone">
+											<img src="img/base/phone.svg" alt="Телефон">
+											<a href="tel:+79139546307">+7 (913) 954-63-07</a>
+										</div>
+									</div>
+									<div class="cards____newloc">
+										<div class="cards__location newloc">
+											<img src="img/base/location.svg" alt="Локация">
+											<span>Красноярск, Октябрьский</span>
+											<a href="#">Показать на карте</a>
+										</div>
+									</div>
+									<div class="cards__newwork">
+										<div class="cards__work newloc">
+											<span>Полная</span>
+											<span>Частичная</span>
+											<span>С проживанием</span>
+										</div>
+									</div>
+									<div class="cards__desc">
+										<p>Мне 42 года, имею высшее педагогическое образование, замужем, двое детей,
+											огромный опыт работы с детьми разного возраста, в данный момент работаю
+											с
+											двумя подопечными пожилыми людьми, как компаньон, помогаю в быту,
+											поддерживаю беседу. Ухаживала за больными сахарным диабетом.</p>
+									</div>
+									<div class="cards__education">
+										<a href="#">
+											<img src="img/base/medical.svg" alt="Картинка">
+											<span>Высшее образование, Курсы сиделок</span>
+										</a>
+									</div>
+									<div class="cards__buttons">
+										<button class="cards__more button-dark-winter">Подробнее</button>
+										<button class="cards__hire button-dark-winter">Нанять сиделку</button>
+									</div>
+								</div>
+							</div>
+							<div class="base__pagination pagination-base">
+								<div class="pagination-base__list">
+									<a href="#" class="pagination-base__page">1</a>
+									<a href="#" class="pagination-base__page">2</a>
+									<a href="#" class="pagination-base__page">3</a>
+									<a href="#" class="pagination-base__page">4</a>
+									<a href="#" class="pagination-base__page">5</a>
+									<a href="#" class="pagination-base__page">6</a>
+									<a href="#" class="pagination-base__page">7</a>
+								</div>
+								<div class="pagination-base__dot">
+									<span>...</span>
+								</div>
+								<div class="pagination-base__last-page">
+									<span>23</span>
+								</div>
+								<div class="pagination-base__button">
+									<button class="pagination-base__prev pagination-base__disabled"></button>
+									<button class="pagination-base__next"></button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="feedback">
+				<div class="feedback__container">
+					<div class="feedback__body">
+						<div class="feedback__image">
+							<picture><source srcset="img/feedback/1.webp" type="image/webp"><img src="img/feedback/1.png" alt="Напишите нам"></picture>
+						</div>
+						<div class="feedback__content">
+							<div class="feedback__title title">
+								<h2>Не смогли найти ответ на свой вопрос?</h2>
+							</div>
+							<div class="feedback__text">
+								<p>Напишите нам или закажите звонок — мы поможем. Наши квалифицированные сотрудники
+									перезвонят вам в удобное для вас время и проконсультируют по всем интересующим
+									вопросам.</p>
+							</div>
+							<div class="feedback__button">
+								<a href="#">Заказать звонок</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__body">
+					<div class="footer__top">
+						<a href="#" class="footer__logo">
+							<picture><source srcset="img/header/logo.webp" type="image/webp"><img src="img/header/logo.png" alt="Логотип сайты"></picture>
+						</a>
+						<div class="footer__feedback">
+							<div class="header__adress footer__adress">
+								<img src="img/header/location.svg" alt="Адресс нашей компании">
+								<p><span>г. Красноярск</span>Ул. проспект Мира, 199 оф. 505</p>
+							</div>
+							<div class="header__phone">
+								<img src="img/header/phone.svg" alt="Телефон нашей компании">
+								<p><a href="tel:+73919996677">+7 (391) 999-66-77</a>Заказать звонок</p>
+							</div>
+						</div>
+						<div class="footer__search">
+							<a href="#" class="js-open-modal" data-modal="1">
+								<img src="img/header/search.svg" alt="Поиск наших услуг">
+							</a>
+						</div>
+						<div class="footer__button">
+							<a href="#" class="button-dark-winter">Нанять сиделку</a>
+						</div>
+					</div>
+					<div class="footer__middle">
+						<nav class="footer__menu">
+							<ul class="footer__list">
+								<li class="footer__item"><a href="#" class="footer__link">Главная</a></li>
+								<li class="footer__item"><a href="#" class="footer__link">О компании</a></li>
+								<li class="footer__item"><a href="base.html" class="footer__link">База сиделок</a></li>
+								<li class="footer__item"><a href="#" class="footer__link">Оплата</a></li>
+								<li class="footer__item"><a href="#" class="footer__link">Отзывы</a></li>
+								<li class="footer__item footer__item_m"><a href="#" class="footer__link">Вопросы и ответы</a>
+								</li>
+								<li class="footer__item "><a href="#" class="footer__link">Контакты</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="footer__bottom">
+						<p>© 2022 Патронажная служба «Во благо» в Красноярске: поиск и подбор сиделки, уход за пожилыми,
+							больными и инвалидами.</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!-- search -->
+	<div class="modal modal-search" data-modal="1">
+		<div class="search__container">
+			<div class="search__body">
+				<div class="search__input">
+					<input type="text" placeholder="Напишите, что хотите найти..">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="overlay js-overlay-modal"></div>
+	<script src="js/app.min.js?_v=20220527130723"></script>
+</body>
+
+</html>
