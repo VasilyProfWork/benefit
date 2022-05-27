@@ -6887,6 +6887,27 @@
         let itemBody = this.closest(".base__item");
         if (itemBody.classList.contains("active-base")) itemBody.classList.remove("active-base");
     }));
+    console.log("sdfsdfsd");
+    let boxOneTitle = document.querySelector(".boxone");
+    let boxTwoTitle = document.querySelector(".boxtwo");
+    let chartBoxOne = document.querySelector(".chart__box-one");
+    let chartBoxTwo = document.querySelector(".chart__box-two");
+    boxTwoTitle.addEventListener("click", (function(e) {
+        if (!boxTwoTitle.classList.contains("chart-active")) {
+            boxTwoTitle.classList.add("chart-active");
+            boxOneTitle.classList.remove("chart-active");
+            chartBoxTwo.classList.add("chart-active");
+            chartBoxOne.classList.remove("chart-active");
+        }
+    }));
+    boxOneTitle.addEventListener("click", (function() {
+        if (!boxOneTitle.classList.contains("chart-active")) {
+            boxOneTitle.classList.add("chart-active");
+            boxTwoTitle.classList.remove("chart-active");
+            chartBoxOne.classList.add("chart-active");
+            chartBoxTwo.classList.remove("chart-active");
+        }
+    }));
     let filterBtn = document.querySelector(".filter_btn_activ");
     let buttonSpan = document.querySelector(".button-span");
     let baseFilter = document.querySelector(".base__filter");
