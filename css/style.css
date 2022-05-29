@@ -2917,8 +2917,7 @@ h6 {
 }
 
 .blank__body {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
 }
 @media (max-width: 47.99875em) {
   .blank__body {
@@ -2967,6 +2966,13 @@ h6 {
     height: 25px;
   }
 }
+.blank__button span {
+  margin-right: 10px;
+}
+.blank__button button svg {
+  fill: white;
+  transition: all 0.3s ease 0s;
+}
 @media (max-width: 47.99875em) {
   .blank__button {
     max-width: 200px;
@@ -2975,6 +2981,9 @@ h6 {
   .blank__button button {
     padding: 10px 15px !important;
   }
+}
+.blank__button:hover svg {
+  fill: #2b5f8d;
 }
 .blank__card {
   padding: 43px 40px;
@@ -2997,7 +3006,7 @@ h6 {
 }
 @media (max-width: 600px) {
   .blank__card {
-    padding: 40px 20px;
+    padding: 40px 20px !important;
   }
 }
 .blank__image {
@@ -3005,7 +3014,7 @@ h6 {
 }
 .blank__image img {
   max-width: 100%;
-  border-radius: 15px;
+  border-radius: 35px;
   border: 2px solid #2c5f8d;
 }
 @media (max-width: 1150px) {
@@ -3034,7 +3043,7 @@ h6 {
 }
 @media (max-width: 600px) {
   .blank__image_m {
-    flex: 0 0 120px;
+    flex: 0 0 120px !important;
   }
 }
 @media (max-width: 480px) {
@@ -3061,7 +3070,7 @@ h6 {
 }
 @media (max-width: 600px) {
   .blank__inner {
-    column-gap: 20px;
+    column-gap: 20px !important;
   }
 }
 @media (max-width: 480px) {
@@ -3083,22 +3092,22 @@ h6 {
 }
 @media (max-width: 61.99875em) {
   .blank__name {
-    flex: 1 1 100%;
+    flex: 1 1 100% !important;
   }
 }
 @media (max-width: 61.99875em) {
   .blank__price {
-    flex: 1 1 100%;
+    flex: 1 1 100% !important;
   }
 }
 @media (max-width: 480px) {
   .blank__price {
-    text-align: center;
+    text-align: center !important;
   }
 }
 @media (max-width: 61.99875em) {
   .blank__stars {
-    flex: 1 1 100%;
+    flex: 1 1 100% !important;
   }
 }
 @media (max-width: 600px) {
@@ -3215,9 +3224,23 @@ h6 {
     justify-content: center;
   }
 }
+.chart__buttons button {
+  text-align: left;
+  cursor: default;
+}
 @media (max-width: 47.99875em) {
   .chart__buttons button {
-    font-size: 20px !important;
+    font-size: 20px;
+  }
+}
+@media (max-width: 93.125em) {
+  .chart__buttons button {
+    cursor: pointer;
+  }
+}
+@media (max-width: 29.99875em) {
+  .chart__buttons button {
+    font-size: 16px !important;
   }
 }
 .chart__box-one {
@@ -3264,6 +3287,11 @@ h6 {
   .box-one__title.chart-active {
     background: #ee723d;
     color: #fff;
+  }
+}
+@media (max-width: 29.99875em) {
+  .box-one__title {
+    padding: 5px 10px;
   }
 }
 @media (max-width: 47.99875em) {
@@ -3383,6 +3411,11 @@ h6 {
     color: #fff;
   }
 }
+@media (max-width: 29.99875em) {
+  .box-two__title {
+    padding: 5px 10px;
+  }
+}
 .box-two__cards {
   padding-right: 6px;
   border: 1px solid #d7d7d7;
@@ -3424,6 +3457,11 @@ h6 {
 }
 .box-two__cards-box::-webkit-scrollbar-track {
   margin: 5px;
+}
+@media (max-width: 29.99875em) {
+  .box-two__cards-box {
+    justify-content: center;
+  }
 }
 .box-two__item {
   font-weight: 700;

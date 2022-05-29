@@ -6887,39 +6887,34 @@
         let itemBody = this.closest(".base__item");
         if (itemBody.classList.contains("active-base")) itemBody.classList.remove("active-base");
     }));
-    console.log("sdfsdfsd");
     let boxOneTitle = document.querySelector(".boxone");
     let boxTwoTitle = document.querySelector(".boxtwo");
     let chartBoxOne = document.querySelector(".chart__box-one");
     let chartBoxTwo = document.querySelector(".chart__box-two");
-    boxTwoTitle.addEventListener("click", (function(e) {
-        if (!boxTwoTitle.classList.contains("chart-active")) {
-            boxTwoTitle.classList.add("chart-active");
-            boxOneTitle.classList.remove("chart-active");
-            chartBoxTwo.classList.add("chart-active");
-            chartBoxOne.classList.remove("chart-active");
-        }
+    if (boxTwoTitle) boxTwoTitle.addEventListener("click", (function() {
+        boxTwoTitle.classList.add("chart-active");
+        boxOneTitle.classList.remove("chart-active");
+        chartBoxTwo.classList.add("chart-active");
+        chartBoxOne.classList.remove("chart-active");
     }));
-    boxOneTitle.addEventListener("click", (function() {
-        if (!boxOneTitle.classList.contains("chart-active")) {
-            boxOneTitle.classList.add("chart-active");
-            boxTwoTitle.classList.remove("chart-active");
-            chartBoxOne.classList.add("chart-active");
-            chartBoxTwo.classList.remove("chart-active");
-        }
+    if (boxOneTitle) boxOneTitle.addEventListener("click", (function() {
+        boxOneTitle.classList.add("chart-active");
+        boxTwoTitle.classList.remove("chart-active");
+        chartBoxOne.classList.add("chart-active");
+        chartBoxTwo.classList.remove("chart-active");
     }));
     let filterBtn = document.querySelector(".filter_btn_activ");
     let buttonSpan = document.querySelector(".button-span");
     let baseFilter = document.querySelector(".base__filter");
-    filterBtn.addEventListener("click", (function(e) {
+    if (filterBtn) filterBtn.addEventListener("click", (function() {
         filterBtn.classList.toggle("filter-activ");
         if (filterBtn.classList.contains("filter-activ")) buttonSpan.textContent = "Скрыть фильтр"; else {
             filterBtn.classList.remove("filter-activ");
             buttonSpan.textContent = "Настроить фильтр";
         }
         baseFilter.classList.toggle("filter-activ");
-        window.addEventListener("click", (e => {
-            const target = e.target;
+        window.addEventListener("click", (function(e) {
+            let target = e.target;
             if (!target.closest(".base__filter") && !target.closest(".filter_btn_activ")) {
                 baseFilter.classList.remove("filter-activ");
                 filterBtn.classList.remove("filter-activ");
@@ -6927,7 +6922,8 @@
             }
         }));
     }));
-    document.getElementById("horizontal-scroller").addEventListener("wheel", (function(event) {
+    let horizontal = document.getElementById("horizontal-scroller");
+    if (horizontal) horizontal.addEventListener("wheel", (function(event) {
         if (event.deltaMode == event.DOM_DELTA_PIXEL) var modifier = 1; else if (event.deltaMode == event.DOM_DELTA_LINE) modifier = parseInt(getComputedStyle(this).lineHeight); else if (event.deltaMode == event.DOM_DELTA_PAGE) modifier = this.clientHeight;
         if (0 != event.deltaY) {
             this.scrollLeft += modifier * event.deltaY;
