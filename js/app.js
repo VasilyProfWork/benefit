@@ -6889,8 +6889,8 @@
     }));
     let boxOneTitle = document.querySelector(".boxone");
     let boxTwoTitle = document.querySelector(".boxtwo");
-    let chartBoxOne = document.querySelector(".chart__box-one");
-    let chartBoxTwo = document.querySelector(".chart__box-two");
+    let chartBoxOne = document.querySelector(".chart__inner-box-one");
+    let chartBoxTwo = document.querySelector(".chart__inner-box-two");
     if (boxTwoTitle) boxTwoTitle.addEventListener("click", (function() {
         boxTwoTitle.classList.add("chart-active");
         boxOneTitle.classList.remove("chart-active");
