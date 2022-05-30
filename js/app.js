@@ -6930,6 +6930,15 @@
             event.preventDefault();
         }
     }));
+    let script_extend = document.querySelector(".private-account__extend-box-standart");
+    let cancel = document.querySelector(".private-account__cancel-premium");
+    let premiumOrStandart = document.querySelectorAll(".status");
+    if (script_extend) script_extend.addEventListener("click", (function() {
+        for (let elem of premiumOrStandart) elem.classList.toggle("avtiv-status");
+    }));
+    if (cancel) cancel.addEventListener("click", (function() {
+        for (let elem of premiumOrStandart) elem.classList.toggle("avtiv-status");
+    }));
     window["FLS"] = true;
     isWebp();
 })();
