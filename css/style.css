@@ -935,6 +935,9 @@ h6 {
   }
 }
 
+.footer {
+  background: #f0f5f5;
+}
 .footer__top {
   padding-top: 38px;
   padding-bottom: 37px;
@@ -3204,7 +3207,6 @@ h6 {
 
 .chart__body {
   position: relative;
-  padding-bottom: 40px;
   display: flex;
   column-gap: 40px;
   flex-wrap: wrap;
@@ -4320,6 +4322,9 @@ h6 {
   outline: none;
 }
 
+.private-account__body {
+  margin-bottom: 40px;
+}
 .private-account__menu {
   display: flex;
   align-items: center;
@@ -4925,6 +4930,145 @@ h6 {
   .item-private-account__stars .simple-rating__label::before {
     margin-right: 10px;
   }
+}
+
+.edit-account__body {
+  margin-bottom: 40px;
+}
+.edit-account__box {
+  display: flex;
+  padding: 40px;
+  border: 1px solid #d7d7d7;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 2px rgba(184, 181, 181, 0.5);
+  column-gap: 40px;
+}
+@media (max-width: 61.99875em) {
+  .edit-account__box {
+    padding: 30px;
+    column-gap: 25px;
+  }
+}
+@media (max-width: 670px) {
+  .edit-account__box {
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 30px;
+    padding: 15px;
+  }
+}
+.edit-account__preview {
+  flex: 0 0 246px;
+}
+@media (max-width: 47.99875em) {
+  .edit-account__preview {
+    flex: 1 1 200px;
+  }
+}
+@media (max-width: 670px) {
+  .edit-account__preview {
+    flex: 0 0 246px;
+  }
+}
+.edit-account__settings {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 40px;
+}
+
+.preview-edit-account__image {
+  margin-bottom: 40px;
+}
+.preview-edit-account__image img {
+  border: 2px solid #2c5f8d;
+  border-radius: 30px;
+  max-width: 100%;
+}
+.preview-edit-account__button {
+  margin-bottom: 40px;
+}
+.preview-edit-account__button button {
+  padding: 12px 25px;
+}
+.preview-edit-account__subtitle {
+  font-weight: 700;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #4a4949;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.preview-edit-account__standart {
+  text-align: center;
+  margin-bottom: 37px;
+}
+.preview-edit-account__standart button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  background: #d7d7d7;
+  border-radius: 50px;
+  font-weight: 700;
+  line-height: 17px;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+.preview-edit-account__box {
+  text-align: center;
+}
+.preview-edit-account__box a {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-decoration: underline;
+  color: #ee723d;
+  display: block;
+  margin-bottom: 5px;
+}
+.preview-edit-account__box span {
+  font-weight: 400;
+  line-height: 17px;
+}
+
+.settings-edit-account__item {
+  display: flex;
+  column-gap: 20px;
+  flex: 1 1 100%;
+  align-items: center;
+}
+@media (max-width: 61.99875em) {
+  .settings-edit-account__item {
+    flex-wrap: wrap;
+    row-gap: 15px;
+  }
+}
+.settings-edit-account__name {
+  font-weight: 700;
+  line-height: 17px;
+  flex: 0 0 200px;
+}
+@media (max-width: 61.99875em) {
+  .settings-edit-account__name {
+    flex: 1 1 100%;
+  }
+}
+.settings-edit-account__input {
+  flex: 1 1 874px;
+}
+.settings-edit-account__input input {
+  padding: 15px 10px;
+  background: #f4f4f4;
+  border: 1px solid #efefef;
+  border-radius: 5px;
+  max-width: 100%;
+  width: 100%;
+  outline: none;
+}
+.settings-edit-account__input input:focus {
+  background: #ffffff;
+  border: 1px solid #2c5f8d;
+  border-radius: 5px;
 }
 /**
  * Swiper 7.2.0

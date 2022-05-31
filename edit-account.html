@@ -2,7 +2,7 @@
 <html lang="ru">
 
 <head>
-	<title>Анкета</title>
+	<title>Редактирование профиля</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
@@ -65,9 +65,9 @@
 			</div>
 		</header>
 		<main class="page">
-			<section class="edit">
-				<div class="edit__container">
-					<div class="edit__body">
+			<section class="edit-account">
+				<div class="edit-account__container">
+					<div class="edit-account__body">
 						<div class="edit__top-box top-box">
 							<a href="personal.html" class="top-box__button-back">
 								<img src="img/blank/arrow.svg" alt="Аватар">
@@ -117,12 +117,12 @@
 								</button>
 							</div>
 						</div>
-						<div class="edit__box">
-							<div class="edit__preview preview">
-								<div class="preview__image">
-									<picture><source srcset="img/edit/avatar1.webp" type="image/webp"><img src="img/edit/avatar1.jpg" alt=""></picture>
+						<div class="edit-account__box">
+							<div class="edit-account__preview preview-edit-account">
+								<div class="preview-edit-account__image">
+									<picture><source srcset="img/edit-account/1.webp" type="image/webp"><img src="img/edit-account/1.jpg" alt="Фотография пользователя"></picture>
 								</div>
-								<div class="preview__load-file">
+								<div class="preview-edit-account__button preview__load-file">
 									<button class="button-dark-winter">
 										<span>Сменить фото</span>
 										<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -132,82 +132,42 @@
 										</svg>
 									</button>
 								</div>
-								<div class="preview__stars">
-									<span>Мой рейтинг на сайте:</span>
-									<div class="simple-rating">
-										<div class="simple-rating__items">
-											<input id="simple-rating__5" type="radio" class="simple-rating__item" name="simple-rating" value="5">
-											<label for="simple-rating__5" class="simple-rating__label"></label>
-											<input id="simple-rating__4" type="radio" class="simple-rating__item" checked name="simple-rating" value="4">
-											<label for="simple-rating__4" class="simple-rating__label"></label>
-											<input id="simple-rating__3" type="radio" class="simple-rating__item" name="simple-rating" value="3">
-											<label for="simple-rating__3" class="simple-rating__label"></label>
-											<input id="simple-rating__2" type="radio" class="simple-rating__item" name="simple-rating" value="2">
-											<label for="simple-rating__2" class="simple-rating__label"></label>
-											<input id="simple-rating__1" type="radio" class="simple-rating__item" name="simple-rating" value="1">
-											<label for="simple-rating__1" class="simple-rating__label"></label>
-										</div>
+								<div class="preview-edit-account__status">
+									<div class="preview-edit-account__subtitle">
+										<span>Статус аккаунта</span>
+									</div>
+									<div class="preview-edit-account__standart">
+										<button>Стандартный</button>
+									</div>
+									<div class="preview-edit-account__box">
+										<a href="#">Получить премиум</a>
+										<span>(стоимость 1000₽)</span>
 									</div>
 								</div>
 							</div>
-							<div class="edit__settings settings">
-								<div class="settings__box">
-									<div class="settings__row">
-										<div class="settings__settings-name">
-											<span>Фамилия, Имя, Отчество</span>
-										</div>
-										<div class="settings__input">
-											<input type="text" placeholder="Александра Борисовна Кириенко">
-										</div>
+							<div class="edit-account__settings settings-edit-account">
+								<div class="settings-edit-account__item">
+									<div class="settings-edit-account__name">
+										<span>Фамилия, Имя, Отчество</span>
 									</div>
-									<div class="settings__row">
-										<div class="settings__settings-name">
-											<span>Адрес проживания</span>
-										</div>
-										<div class="settings__input">
-											<input type="text" placeholder="г. Красноярск, Октябрьский р-н, Лесопарковая, 54 - 430">
-										</div>
+									<div class="settings-edit-account__input">
+										<input type="text" placeholder="Александр Михайлович Гаврилов">
 									</div>
-									<div class="settings__row settings__price">
-										<div class="settings__settings-name">
-											<span>Ожидаемая оплата от</span>
-										</div>
-										<div class="settings__select settings__100">
-											<select class="js-choice">
-												<option value="1" selected>250 ₽</option>
-												<option value="4">250 ₽</option>
-												<option value="4">350 ₽</option>
-												<option value="4">450 ₽</option>
-												<option value="4">550 ₽</option>
-											</select>
-										</div>
+								</div>
+								<div class="settings-edit-account__item">
+									<div class="settings-edit-account__name">
+										<span>Адрес проживания</span>
 									</div>
-									<div class="settings__row settings__bithday">
-										<div class="settings__settings-name">
-											<span>Дата рождения</span>
-										</div>
+									<div class="settings-edit-account__input">
+										<input type="text" placeholder="г. Красноярск, Октябрьский р-н, Крупской, 8 - 206">
+									</div>
+								</div>
+								<div class="settings-edit-account__item">
+									<div class="settings-edit-account__name">
+										<span>Дата рождения</span>
+									</div>
+									<div class="settings-edit-account__input">
 										<div class="settings__select">
-											<div class="settings__select-item-78">
-												<select class="js-choice settings__78">
-													<option value="1" selected>4</option>
-													<option value="4">1</option>
-													<option value="4">2</option>
-													<option value="4">3</option>
-													<option value="4">4</option>
-													<option value="4">1</option>
-													<option value="4">2</option>
-													<option value="4">3</option>
-													<option value="4">4</option>
-													<option value="4">1</option>
-													<option value="4">2</option>
-													<option value="4">3</option>
-													<option value="4">4</option>
-													<option value="4">1</option>
-													<option value="4">2</option>
-													<option value="4">3</option>
-													<option value="4">4</option>
-												</select>
-											</div>
 											<div class="settings__select-item-78">
 												<select class="js-choice settings__78">
 													<option value="1" selected>12</option>
@@ -227,6 +187,27 @@
 													<option value="4">12</option>
 													<option value="4">12</option>
 													<option value="4">12</option>
+												</select>
+											</div>
+											<div class="settings__select-item-78">
+												<select class="js-choice settings__78">
+													<option value="1" selected>4</option>
+													<option value="4">1</option>
+													<option value="4">2</option>
+													<option value="4">3</option>
+													<option value="4">4</option>
+													<option value="4">1</option>
+													<option value="4">2</option>
+													<option value="4">3</option>
+													<option value="4">4</option>
+													<option value="4">1</option>
+													<option value="4">2</option>
+													<option value="4">3</option>
+													<option value="4">4</option>
+													<option value="4">1</option>
+													<option value="4">2</option>
+													<option value="4">3</option>
+													<option value="4">4</option>
 												</select>
 											</div>
 											<div class="settings__select-item-92">
@@ -250,269 +231,37 @@
 													<option value="4">1980</option>
 												</select>
 											</div>
-											<span>42 года</span>
-										</div>
-									</div>
-									<div class="settings__row settings__expirience">
-										<div class="settings__settings-name">
-											<span>Опыт работы</span>
-										</div>
-										<div class="settings__select settings__select-item-105">
-											<select class="js-choice settings__105">
-												<option value="1" selected>3 года</option>
-												<option value="4">4 года</option>
-												<option value="4">5 года</option>
-												<option value="4">6 года</option>
-												<option value="4">7 года</option>
-											</select>
-										</div>
-									</div>
-									<div class="settings__row">
-										<div class="settings__settings-name">
-											<span>Национальность</span>
-										</div>
-										<div class="settings__input">
-											<input type="text" placeholder="Русская">
-										</div>
-									</div>
-									<div class="settings__row">
-										<div class="settings__settings-name">
-											<span>Уход за мужчинами</span>
-										</div>
-										<div class="settings__radio">
-											<div class="options__item">
-												<input id="yes" checked type="radio" value="yes" name="yesorno" class="options__input">
-												<label for="yes" class="options__label"><span>Да</span></label>
-											</div>
-											<div class="options__item">
-												<input id="no" type="radio" value="no" name="yesorno" class="options__input">
-												<label for="no" class="options__label"><span>Нет</span></label>
-											</div>
-										</div>
-
-									</div>
-									<div class="settings__row">
-										<div class="settings__settings-name">
-											<span>Рассматриваю уход за подопечными весом до</span>
-										</div>
-										<div class="settings__select settings__select-item-97">
-											<select class="js-choice settings__97">
-												<option value="1" selected>80 кг</option>
-												<option value="4">80 кг</option>
-												<option value="4">80 кг</option>
-												<option value="4">80 кг</option>
-												<option value="4">80 кг</option>
-											</select>
-										</div>
-									</div>
-									<div class="settings__row">
-										<div class="settings__settings-name">
-											<span>Справки, дипломы</span>
-										</div>
-										<div class="settings__input settings__input_file">
-											<input type="file" class="settings__input_img" placeholder="Русская">
-											<div class="settings__list">
-												<div class="settings__item-file">
-													<img src="img/edit/pdf.svg" alt="ПДФ">
-													<span>
-														Сертификат мед. работника dfgdfgdfgdfgdf gdfgdsfsdfsdf
-													</span>
-													<img class="settings__close-btn" src="img/edit/close.svg" alt="Закрыть">
-												</div>
-												<div class="settings__item-file">
-													<img src="img/edit/pdf.svg" alt="ПДФ">
-													<span>
-														Сертификат мед. работника
-													</span>
-													<img class="settings__close-btn" src="img/edit/close.svg" alt="Закрыть">
-												</div>
-												<div class="settings__item-file">
-													<img src="img/edit/pdf.svg" alt="ПДФ">
-													<span>
-														Сертификат мед. работника
-													</span>
-													<img class="settings__close-btn" src="img/edit/close.svg" alt="Закрыть">
-												</div>
-												<div class="settings__item-file">
-													<img src="img/edit/pdf.svg" alt="ПДФ">
-													<span>
-														Сертификат
-													</span>
-													<img class="settings__close-btn" src="img/edit/close.svg" alt="Закрыть">
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="settings__row">
-										<div class="settings__settings-name">
-											<span>Работал(а) с диагнозами</span>
-										</div>
-										<div class="settings__input">
-											<input type="text" placeholder="Гипертония, Инвалидность, Инсульт, Онкология">
-										</div>
-									</div>
-									<div class="settings__row">
-										<div class="settings__settings-name settings__settings-name_checkbox">
-											<span>Занятость</span>
-										</div>
-										<div class="settings__inner">
-											<input type="checkbox" data-location-param id="location-01" class="settings__checkbox">
-											<label class="settings__btn" for="location-01">Полная</label>
-
-											<input type="checkbox" data-location-param id="location-02" class="settings__checkbox">
-											<label class="settings__btn" for="location-02">Частичная</label>
-
-											<input type="checkbox" data-location-param id="location-03" class="settings__checkbox">
-											<label class="settings__btn" for="location-03">С проживанием</label>
-										</div>
-									</div>
-									<div class="settings__row">
-										<div class="settings__settings-name">
-											<span>Расскажите о себе</span>
-										</div>
-										<div class="settings__input">
-											<textarea placeholder="Мне 42 года, имею высшее педагогическое образование, замужем, двое детей, огромный опыт работы с детьми разного возраста, в данный момент работаю с двумя подопечными пожилыми людьми, как компаньон, помогаю в быту, поддерживаю беседу. Ухаживала за больными сахарным диабетом."></textarea>
-										</div>
-									</div>
-									<div class="settings__row">
-										<div class="settings__settings-name">
-											<span>Образование</span>
-										</div>
-										<div class="settings__input settings__input_file">
-											<input type="file" class="settings__input_img" placeholder="Русская">
-											<div class="settings__list">
-												<div class="settings__item-file">
-													<img src="img/edit/pdf.svg" alt="ПДФ">
-													<span>
-														Высшее образование
-													</span>
-													<img class="settings__close-btn" src="img/edit/close.svg" alt="Закрыть">
-												</div>
-											</div>
+											<span>36 лет</span>
 										</div>
 									</div>
 								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="chart">
-				<div class="chart__container">
-					<div class="chart__body">
-						<div class="chart__buttons">
-							<button class="box-one__title boxone chart-active title">
-								График работы
-							</button>
-							<button class="box-two__title boxtwo title">
-								Могу выполнять
-							</button>
-						</div>
-						<div class="chart__inner-box-one chart-active">
-							<div class="chart__choice choice-chart">
-								<div class="choice-chart__subtitle">
-									<h3>Выберите дни и время на неделе, удобные для работы:</h3>
-								</div>
-								<div class="choice-chart__box">
-									<div class="choice-chart__yes-work">
-										<span>Могу работать</span>
+								<div class="settings-edit-account__item">
+									<div class="settings-edit-account__name">
+										<span>Почта</span>
 									</div>
-									<div class="choice-chart__no-work">
-										<span>Не могу работать</span>
+									<div class="settings-edit-account__input">
+										<input type="text" placeholder="mail@mail.ru">
 									</div>
 								</div>
-							</div>
-							<div class="chart__box-one box-one ">
-								<div class="box-one__cards">
-									<div class="box-one__cards-block">
-										<div class="box-one__row">
-											<div class="box-one__column"></div>
-											<div class="box-one__column box-one__column_day">Пн</div>
-											<div class="box-one__column box-one__column_day">Вт</div>
-											<div class="box-one__column box-one__column_day">Ср</div>
-											<div class="box-one__column box-one__column_day">Чт</div>
-											<div class="box-one__column box-one__column_day">Пт</div>
-											<div class="box-one__column box-one__column_day">Сб</div>
-											<div class="box-one__column box-one__column_day">Вс</div>
-										</div>
-										<div class="box-one__row">
-											<div class="box-one__column box-one__column_time">Утро</div>
-											<div class="box-one__column box-one__column_bg box-one__column_btl box-one__column_bl">
-												7:00-12:00</div>
-											<div class="box-one__column box-one__column_bg">7:00-12:00</div>
-											<div class="box-one__column box-one__column_bg">9:00-11:00</div>
-											<div class="box-one__column box-one__column_bg">9:00-11:00</div>
-											<div class="box-one__column box-one__column_bg">7:00-12:00</div>
-											<div class="box-one__column box-one__column_bg">7:00-12:00</div>
-											<div class="box-one__column box-one__column_bg box-one__column_btr box-one__column_dot">
-											</div>
-										</div>
-										<div class="box-one__row">
-											<div class="box-one__column box-one__column_time">День</div>
-											<div class="box-one__column box-one__column_bg box-one__column_bl">
-												12:00-17:00
-											</div>
-											<div class="box-one__column box-one__column_bg">12:00-17:00</div>
-											<div class="box-one__column box-one__column_bg">12:00-17:00</div>
-											<div class="box-one__column box-one__column_bg">12:00-17:00</div>
-											<div class="box-one__column box-one__column_bg">12:00-17:00</div>
-											<div class="box-one__column box-one__column_bg">12:00-17:00</div>
-											<div class="box-one__column box-one__column_bg box-one__column_dot"></div>
-										</div>
-										<div class="box-one__row">
-											<div class="box-one__column box-one__column_time">Вечер</div>
-											<div class="box-one__column box-one__column_bg box-one__column_bl">
-												18:00-20:00
-											</div>
-											<div class="box-one__column box-one__column_bg">18:00-20:00</div>
-											<div class="box-one__column box-one__column_bg">18:00-20:00</div>
-											<div class="box-one__column box-one__column_bg">18:00-20:00</div>
-											<div class="box-one__column box-one__column_bg">18:00-20:00</div>
-											<div class="box-one__column box-one__column_bg">18:00-20:00</div>
-											<div class="box-one__column box-one__column_bg box-one__column_dot"></div>
-										</div>
-										<div class="box-one__row">
-											<div class="box-one__column box-one__column_time">Ночь</div>
-											<div class="box-one__column box-one__column_bg box-one__column_bbl box-one__column_bb box-one__column_bl box-one__column_dot">
-											</div>
-											<div class="box-one__column box-one__column_bg box-one__column_bb box-one__column_dot">
-											</div>
-											<div class="box-one__column box-one__column_bg box-one__column_bb box-one__column_dot">
-											</div>
-											<div class="box-one__column box-one__column_bg box-one__column_bb box-one__column_dot">
-											</div>
-											<div class="box-one__column box-one__column_bg box-one__column_bb box-one__column_dot">
-											</div>
-											<div class="box-one__column box-one__column_bg box-one__column_bb box-one__column_dot">
-											</div>
-											<div class="box-one__column box-one__column_bg box-one__column_bb box-one__column_bbr box-one__column_dot">
-											</div>
-										</div>
+								<div class="settings-edit-account__item">
+									<div class="settings-edit-account__name">
+										<span>Сменить пароль:</span>
 									</div>
 								</div>
-							</div>
-						</div>
-						<div class="chart__inner-box-two">
-
-							<div class="chart__box-work">
-								<div class="chart__subtitle-work">
-									<h3>Введите вид работ</h3>
+								<div class="settings-edit-account__item">
+									<div class="settings-edit-account__name">
+										<span>Новый пароль</span>
+									</div>
+									<div class="settings-edit-account__input">
+										<input type="text">
+									</div>
 								</div>
-								<div class="chart__input-work">
-									<input class="inp-img" type="text" placeholder="Уход за поверхностью тела">
-									<img src="img/edit/del.svg" alt="Удалить">
-								</div>
-							</div>
-
-							<div class="chart__box-two box-two">
-								<div class="box-two__cards">
-									<div class="box-two__cards-box">
-										<div class="box-two__item"><span>Помощь при пользовании туалетной
-												комнатой</span>
-										</div>
-										<div class="box-two__item"><span>Уход за поверхностью тела</span></div>
-										<div class="box-two__item"><span>Поднятие и передвижение пациента</span></div>
-										<div class="box-two__item"><span>Помощь при использовании суден</span></div>
+								<div class="settings-edit-account__item">
+									<div class="settings-edit-account__name">
+										<span>Повторите пароль</span>
+									</div>
+									<div class="settings-edit-account__input">
+										<input type="text">
 									</div>
 								</div>
 							</div>
