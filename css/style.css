@@ -5482,12 +5482,12 @@ h6 {
 }
 @media (max-width: 1150px) {
   .contacts__item {
-    flex: 1 1 45%;
+    flex: 1 1 45% !important;
   }
 }
 @media (max-width: 650px) {
   .contacts__item {
-    flex: 1 1 100%;
+    flex: 1 1 100% !important;
   }
 }
 .contacts__inner {
@@ -5500,7 +5500,7 @@ h6 {
 }
 @media (max-width: 1150px) {
   .contacts__inner {
-    flex: 0 1 288px;
+    flex: 0 1 288px !important;
   }
 }
 .contacts__box span {
