@@ -6939,6 +6939,14 @@
     if (cancel) cancel.addEventListener("click", (function() {
         for (let elem of premiumOrStandart) elem.classList.toggle("avtiv-status");
     }));
+    let questionAnswerTitle = document.querySelectorAll(".question-answer__title");
+    for (let elem of questionAnswerTitle) elem.addEventListener("click", (function(e) {
+        e.preventDefault();
+        let questionAnswerButton = this.querySelector(".question-answer__button");
+        questionAnswerButton.classList.toggle("activ-answer");
+        let questionAnswerText = this.nextElementSibling;
+        if (questionAnswerText) if (questionAnswerText.style.maxHeight) questionAnswerText.style.maxHeight = null; else questionAnswerText.style.maxHeight = questionAnswerText.scrollHeight + "px";
+    }));
     window["FLS"] = true;
     isWebp();
 })();
