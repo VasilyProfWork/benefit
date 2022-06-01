@@ -147,6 +147,7 @@ h6 {
   max-width: 1460px;
   width: 100%;
   margin: 0 auto;
+  max-height: 100%;
 }
 
 /* Стили для активных классов подложки и окна */
@@ -205,6 +206,722 @@ h6 {
   width: 100%;
   height: 1px;
   background: #d7d7d7;
+}
+
+.modal-call {
+  /* Скрываем окна  */
+  opacity: 0;
+  visibility: hidden;
+  /*  Установаем ширину окна  */
+  /*  Центрируем и задаем z-index */
+  position: fixed;
+  z-index: 200;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 130;
+  /* Должен быть выше чем у подложки*/
+  /*  Побочные стили   */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  background-color: #fff;
+  max-width: 560px;
+  width: 100%;
+  margin: 0 auto;
+  max-height: 100%;
+}
+
+/* Стили для активных классов подложки и окна */
+.modal-call.active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.call__body {
+  padding: 40px;
+}
+@media (max-width: 560px) {
+  .call__body {
+    padding: 40px 20px;
+  }
+}
+.call__title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.call__form input {
+  outline: none;
+}
+.call__form input:focus {
+  background-color: #fff;
+  border: 1px solid #2c5f8d;
+}
+.call__item span {
+  font-weight: 700;
+  line-height: 17px;
+  margin-bottom: 20px;
+  display: block;
+}
+.call__item input {
+  font-weight: 400;
+  line-height: 17px;
+  width: 100%;
+  background: #f4f4f4;
+  border: 1px solid #efefef;
+  border-radius: 5px;
+  padding: 17px 20px;
+}
+.call__item:nth-child(1) {
+  margin-bottom: 40px;
+}
+.call__item:nth-child(2) {
+  margin-bottom: 20px;
+}
+.call__radio {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.call__radio input {
+  margin-right: 20px;
+}
+.call__radio span {
+  font-weight: 700;
+  line-height: 17px;
+}
+.call__radio a {
+  color: #ee723d;
+  text-decoration: underline;
+}
+.call__buttons {
+  display: flex;
+  column-gap: 20px;
+}
+@media (max-width: 560px) {
+  .call__buttons {
+    column-gap: 10px;
+  }
+}
+@media (max-width: 400px) {
+  .call__buttons {
+    flex-wrap: wrap;
+    row-gap: 15px;
+  }
+}
+.call__send {
+  flex: 0 0 230px;
+  background: #2b5f8d;
+  border: 1px solid #2b5f8d;
+  border-radius: 5px;
+  padding: 15px 51px;
+  font-weight: 700;
+  line-height: 17px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease 0s;
+}
+.call__send svg {
+  fill: white;
+  transition: all 0.3s ease 0s;
+}
+.call__send span {
+  margin-right: 10px;
+}
+.call__send:hover {
+  background: #fff;
+  color: #2b5f8d;
+}
+.call__send:hover svg {
+  fill: #2b5f8d;
+}
+@media (max-width: 560px) {
+  .call__send {
+    padding-left: 30px;
+    padding-right: 30px;
+    flex: 0 1 230px;
+  }
+}
+@media (max-width: 400px) {
+  .call__send {
+    flex: 1 1 100%;
+  }
+}
+.call__cancel {
+  flex: 0 0 230px;
+  background: #d13227;
+  border: 1px solid #d13227;
+  border-radius: 5px;
+  padding: 15px 51px;
+  font-weight: 700;
+  line-height: 17px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease 0s;
+}
+.call__cancel svg {
+  fill: white;
+  transition: all 0.3s ease 0s;
+}
+.call__cancel span {
+  margin-right: 10px;
+}
+.call__cancel:hover {
+  background: #fff;
+  color: #d13227;
+}
+.call__cancel:hover svg {
+  fill: #d13227;
+}
+@media (max-width: 560px) {
+  .call__cancel {
+    padding-left: 30px;
+    padding-right: 30px;
+    flex: 0 1 230px;
+  }
+}
+@media (max-width: 400px) {
+  .call__cancel {
+    flex: 1 1 100%;
+  }
+}
+
+.call__radio .options__label::before {
+  flex: 0 0 24px;
+  height: 24px;
+}
+.call__radio .options__label::after {
+  top: 6px;
+  left: 6px;
+  width: 12px;
+  height: 12px;
+}
+
+.modal-thanks {
+  /* Скрываем окна  */
+  opacity: 0;
+  visibility: hidden;
+  /*  Установаем ширину окна  */
+  /*  Центрируем и задаем z-index */
+  position: fixed;
+  z-index: 200;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 130;
+  /* Должен быть выше чем у подложки*/
+  /*  Побочные стили   */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  background-color: #fff;
+  max-width: 540px;
+  width: 100%;
+  margin: 0 auto;
+  max-height: 100%;
+}
+
+/* Стили для активных классов подложки и окна */
+.modal-thanks.active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.thanks__body {
+  padding: 40px;
+  text-align: center;
+}
+@media (max-width: 29.99875em) {
+  .thanks__body {
+    padding: 40px 20px;
+  }
+}
+.thanks__title {
+  margin-bottom: 10px;
+}
+@media (max-width: 47.99875em) {
+  .thanks__title {
+    line-height: 32px !important;
+  }
+}
+.thanks__text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 40px;
+}
+.thanks__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.thanks__button_m {
+  flex: 0 0 230px;
+  background: #d13227;
+  border: 1px solid #d13227;
+  border-radius: 5px;
+  padding: 15px 51px;
+  font-weight: 700;
+  line-height: 17px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease 0s;
+}
+.thanks__button_m svg {
+  position: relative;
+  fill: white !important;
+  transition: all 0.3s ease 0s;
+}
+.thanks__button_m span {
+  margin-right: 10px;
+}
+.thanks__button_m:hover {
+  background: #fff;
+  color: #d13227;
+}
+.thanks__button_m:hover svg {
+  fill: #d13227 !important;
+}
+@media (max-width: 560px) {
+  .thanks__button_m {
+    padding-left: 30px;
+    padding-right: 30px;
+    flex: 0 1 230px;
+  }
+}
+@media (max-width: 400px) {
+  .thanks__button_m {
+    flex: 1 1 100%;
+  }
+}
+
+.modal-user {
+  /* Скрываем окна  */
+  opacity: 0;
+  visibility: hidden;
+  /*  Установаем ширину окна  */
+  /*  Центрируем и задаем z-index */
+  position: fixed;
+  z-index: 200;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 130;
+  /* Должен быть выше чем у подложки*/
+  /*  Побочные стили   */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  background-color: #fff;
+  max-width: 1121px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Стили для активных классов подложки и окна */
+.modal-user.active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.user__body {
+  padding: 40px;
+  text-align: center;
+}
+@media (max-width: 560px) {
+  .user__body {
+    padding: 20px;
+  }
+}
+.user__title {
+  margin-bottom: 10px;
+}
+.user__text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 40px;
+}
+
+.user__body .call__buttons {
+  justify-content: center;
+  column-gap: 40px;
+}
+@media (max-width: 560px) {
+  .user__body .call__buttons {
+    column-gap: 20px;
+  }
+}
+
+.user__body .call__buttons .call__cancel svg {
+  fill: white !important;
+  transition: all 0.3s ease 0s;
+}
+.user__body .call__buttons .call__cancel:hover svg {
+  fill: #d13227 !important;
+}
+
+.modal-reg {
+  /* Скрываем окна  */
+  opacity: 0;
+  visibility: hidden;
+  /*  Установаем ширину окна  */
+  /*  Центрируем и задаем z-index */
+  position: fixed;
+  z-index: 200;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 130;
+  /* Должен быть выше чем у подложки*/
+  /*  Побочные стили   */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  background-color: #fff;
+  max-width: 578px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  max-height: 100%;
+}
+
+/* Стили для активных классов подложки и окна */
+.modal-reg.active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+  overflow-y: auto;
+}
+
+.tabs {
+  padding: 40px;
+}
+@media (max-width: 29.99875em) {
+  .tabs {
+    padding: 20px;
+  }
+}
+
+.tabs__nav {
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+  margin-bottom: 40px;
+}
+
+.tabs__btn {
+  font-family: "Palatino Linotype";
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 43px;
+  color: #ee723d;
+  background: #f4f4f4;
+  border: 1px solid #efefef;
+  cursor: pointer;
+}
+@media (max-width: 29.99875em) {
+  .tabs__btn {
+    padding: 6px 20px;
+    font-size: 23px;
+    line-height: 35px;
+  }
+}
+
+.tabs__btn_active {
+  color: #ffffff;
+  background: #ee723d;
+  cursor: default;
+}
+
+.tabs__btn:not(.tabs__btn_active):hover,
+.tabs__btn:not(.tabs__btn_active):focus {
+  background-color: #eee;
+}
+
+.tabs__pane {
+  display: none;
+}
+
+.tabs__pane_show {
+  display: block;
+}
+
+.entry__saveme .options__label::before {
+  flex: 0 0 24px;
+  height: 24px;
+}
+.entry__saveme .options__label::after {
+  top: 6px;
+  left: 6px;
+  width: 12px;
+  height: 12px;
+}
+
+.entry__item input {
+  background: #f4f4f4;
+  border: 1px solid #efefef;
+  border-radius: 5px;
+  font-weight: 400;
+  line-height: 17px;
+  padding: 17px 20px;
+  width: 100%;
+  outline: none;
+}
+.entry__item input:focus {
+  background: #ffffff;
+  border: 1px solid #2c5f8d;
+  border-radius: 5px;
+}
+.entry__item_m {
+  margin-bottom: 40px;
+}
+.entry__item_mm {
+  margin-bottom: 20px;
+}
+.entry__name {
+  font-weight: 700;
+  line-height: 17px;
+  margin-bottom: 20px;
+}
+.entry__err {
+  border: 1px solid #d13227 !important;
+}
+.entry__saveme {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.entry__saveme a {
+  font-weight: 700;
+  line-height: 17px;
+  text-decoration: underline;
+  color: #ee723d;
+}
+.entry__error {
+  margin-top: 40px;
+  text-align: center;
+}
+.entry__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #d13227;
+  margin-bottom: 20px;
+}
+.entry__image img {
+  max-width: 100%;
+}
+
+.entry__saveme .options__label {
+  white-space: nowrap;
+  font-weight: 700;
+  line-height: 17px;
+}
+
+.reg__text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  max-width: 390px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 40px;
+  display: none;
+}
+.reg__text.reg-text-activ {
+  display: block;
+}
+.reg__item:not(:last-child) {
+  margin-bottom: 40px;
+}
+.reg__name {
+  font-weight: 700;
+  line-height: 17px;
+  margin-bottom: 20px;
+}
+.reg__input input {
+  padding: 17px 20px;
+  padding-right: 50px;
+  width: 100%;
+  background: #f4f4f4;
+  border: 1px solid #efefef;
+  border-radius: 5px;
+  outline: none;
+}
+.reg__input input:focus {
+  background: #ffffff;
+  border: 1px solid #2c5f8d;
+  border-radius: 5px;
+}
+.reg__warning {
+  position: relative;
+}
+.reg__warning p {
+  margin-top: 5px;
+  font-weight: 400;
+  line-height: 17px;
+  color: #d13227;
+}
+.reg__warning input {
+  border: 1px solid #d13227;
+}
+.reg__warning-btn {
+  z-index: 2;
+  position: absolute;
+  top: 26px;
+  right: 20px;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 15px;
+}
+.reg__buttons {
+  margin-bottom: 40px;
+  display: flex;
+  column-gap: 10px;
+}
+@media (max-width: 400px) {
+  .reg__buttons {
+    flex-wrap: wrap;
+    row-gap: 15px;
+  }
+}
+.reg__btn {
+  background: #f4f4f4;
+  border: 1px solid #efefef;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-family: "Palatino Linotype";
+  font-style: italic;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 43px;
+  color: #ee723d;
+  flex: 0 0 230px;
+  white-space: nowrap;
+}
+@media (max-width: 580px) {
+  .reg__btn {
+    flex: 1 1 45%;
+    font-size: 23px;
+    line-height: 30px;
+  }
+}
+.reg-btn-activ {
+  background: #ee723d;
+  color: #ffffff;
+  cursor: default;
+}
+
+.reg__btn:not(.reg-btn-activ):hover,
+.reg__btn:not(.reg-btn-activ):focus {
+  background-color: #eee;
+}
+
+.reg-call__buttons {
+  display: flex;
+  column-gap: 20px;
+}
+@media (max-width: 560px) {
+  .reg-call__buttons {
+    column-gap: 10px;
+  }
+}
+@media (max-width: 400px) {
+  .reg-call__buttons {
+    flex-wrap: wrap;
+    row-gap: 15px;
+  }
+}
+
+.reg__send {
+  flex: 0 1 230px;
+  background: #2b5f8d;
+  border: 1px solid #2b5f8d;
+  border-radius: 5px;
+  padding: 15px 45px;
+  font-weight: 700;
+  line-height: 17px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease 0s;
+}
+.reg__send svg {
+  fill: white;
+  transition: all 0.3s ease 0s;
+}
+.reg__send span {
+  margin-right: 10px;
+}
+.reg__send:hover {
+  background: #fff;
+  color: #2b5f8d;
+}
+.reg__send:hover svg {
+  fill: #2b5f8d;
+}
+@media (max-width: 560px) {
+  .reg__send {
+    padding-left: 30px;
+    padding-right: 30px;
+    flex: 0 1 230px;
+  }
+}
+@media (max-width: 400px) {
+  .reg__send {
+    flex: 1 1 100%;
+  }
+}
+.reg__cancel {
+  flex: 0 0 230px;
+  background: #d13227;
+  border: 1px solid #d13227;
+  border-radius: 5px;
+  padding: 15px 51px;
+  font-weight: 700;
+  line-height: 17px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease 0s;
+}
+.reg__cancel svg {
+  fill: white;
+  transition: all 0.3s ease 0s;
+}
+.reg__cancel span {
+  margin-right: 10px;
+}
+.reg__cancel:hover {
+  background: #fff;
+  color: #d13227;
+}
+.reg__cancel:hover svg {
+  fill: #d13227;
+}
+@media (max-width: 560px) {
+  .reg__cancel {
+    padding-left: 30px;
+    padding-right: 30px;
+    flex: 0 1 230px;
+  }
+}
+@media (max-width: 400px) {
+  .reg__cancel {
+    flex: 1 1 100%;
+  }
 }
 
 /* ===============================
@@ -5509,6 +6226,12 @@ h6 {
   line-height: 17px;
   color: #818181;
 }
+.contacts__box button {
+  display: block;
+  font-weight: 400;
+  line-height: 17px;
+  color: #818181;
+}
 .contacts__box_m {
   font-weight: 700 !important;
   font-size: 16px !important;
@@ -5542,6 +6265,9 @@ h6 {
   height: 100%;
 }
 
+.error {
+  padding-top: 40px;
+}
 .error__body {
   max-width: 1034px;
   margin: 0 auto;

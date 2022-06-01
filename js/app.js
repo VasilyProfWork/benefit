@@ -6859,7 +6859,7 @@
                     event.keyCode && (keyCode = event.keyCode);
                     var pos = this.selectionStart;
                     if (pos < 3) event.preventDefault();
-                    var matrix = "+3 (___) ___ ____", i = 0, def = matrix.replace(/\D/g, ""), val = this.value.replace(/\D/g, ""), new_value = matrix.replace(/[_\d]/g, (function(a) {
+                    var matrix = "+7 (___) ___-__-__", i = 0, def = matrix.replace(/\D/g, ""), val = this.value.replace(/\D/g, ""), new_value = matrix.replace(/[_\d]/g, (function(a) {
                         return i < val.length ? val.charAt(i++) || def.charAt(i) : a;
                     }));
                     i = new_value.indexOf("_");
@@ -6946,6 +6946,68 @@
         questionAnswerButton.classList.toggle("activ-answer");
         let questionAnswerText = this.nextElementSibling;
         if (questionAnswerText) if (questionAnswerText.style.maxHeight) questionAnswerText.style.maxHeight = null; else questionAnswerText.style.maxHeight = questionAnswerText.scrollHeight + "px";
+    }));
+    class ItcTabs {
+        constructor(target, config) {
+            const defaultConfig = {};
+            this._config = Object.assign(defaultConfig, config);
+            this._elTabs = "string" === typeof target ? document.querySelector(target) : target;
+            this._elButtons = this._elTabs.querySelectorAll(".tabs__btn");
+            this._elPanes = this._elTabs.querySelectorAll(".tabs__pane");
+            this._eventShow = new Event("tab.itc.change");
+            this._init();
+            this._events();
+        }
+        _init() {
+            this._elTabs.setAttribute("role", "tablist");
+            this._elButtons.forEach(((el, index) => {
+                el.dataset.index = index;
+                el.setAttribute("role", "tab");
+                this._elPanes[index].setAttribute("role", "tabpanel");
+            }));
+        }
+        show(elLinkTarget) {
+            const elPaneTarget = this._elPanes[elLinkTarget.dataset.index];
+            const elLinkActive = this._elTabs.querySelector(".tabs__btn_active");
+            const elPaneShow = this._elTabs.querySelector(".tabs__pane_show");
+            if (elLinkTarget === elLinkActive) return;
+            elLinkActive ? elLinkActive.classList.remove("tabs__btn_active") : null;
+            elPaneShow ? elPaneShow.classList.remove("tabs__pane_show") : null;
+            elLinkTarget.classList.add("tabs__btn_active");
+            elPaneTarget.classList.add("tabs__pane_show");
+            this._elTabs.dispatchEvent(this._eventShow);
+            elLinkTarget.focus();
+        }
+        showByIndex(index) {
+            const elLinkTarget = this._elButtons[index];
+            elLinkTarget ? this.show(elLinkTarget) : null;
+        }
+        _events() {
+            this._elTabs.addEventListener("click", (e => {
+                const target = e.target.closest(".tabs__btn");
+                if (target) {
+                    e.preventDefault();
+                    this.show(target);
+                }
+            }));
+        }
+    }
+    new ItcTabs(".tabs");
+    let regBtnOne = document.querySelector(".reg__btn-one");
+    let regBtnTwo = document.querySelector(".reg__btn-two");
+    let regTextOne = document.querySelector(".reg__text-one");
+    let regTextTwo = document.querySelector(".reg__text-two");
+    if (regBtnTwo) regBtnTwo.addEventListener("click", (function() {
+        regBtnOne.classList.remove("reg-btn-activ");
+        regBtnTwo.classList.add("reg-btn-activ");
+        regTextOne.classList.toggle("reg-text-activ");
+        regTextTwo.classList.toggle("reg-text-activ");
+    }));
+    if (regBtnOne) regBtnOne.addEventListener("click", (function() {
+        regBtnTwo.classList.remove("reg-btn-activ");
+        regBtnOne.classList.add("reg-btn-activ");
+        regTextOne.classList.toggle("reg-text-activ");
+        regTextTwo.classList.toggle("reg-text-activ");
     }));
     window["FLS"] = true;
     isWebp();
