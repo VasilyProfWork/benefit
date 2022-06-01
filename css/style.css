@@ -584,7 +584,7 @@ h6 {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   border-radius: 5px;
   background-color: #fff;
-  max-width: 578px;
+  max-width: 560px;
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
@@ -722,6 +722,10 @@ h6 {
   max-width: 100%;
 }
 
+.entry__box .call__buttons button {
+  flex: 1 1 45%;
+}
+
 .entry__saveme .options__label {
   white-space: nowrap;
   font-weight: 700;
@@ -799,14 +803,14 @@ h6 {
   background: #f4f4f4;
   border: 1px solid #efefef;
   border-radius: 5px;
-  padding: 10px 20px;
+  padding: 10px 10px;
   font-family: "Palatino Linotype";
   font-style: italic;
   font-weight: 700;
   font-size: 32px;
   line-height: 43px;
   color: #ee723d;
-  flex: 0 0 230px;
+  flex: 1 1 45%;
   white-space: nowrap;
 }
 @media (max-width: 580px) {
@@ -816,6 +820,12 @@ h6 {
     line-height: 30px;
   }
 }
+@media (max-width: 400px) {
+  .reg__btn {
+    flex: 1 1 100%;
+  }
+}
+
 .reg-btn-activ {
   background: #ee723d;
   color: #ffffff;
@@ -844,7 +854,7 @@ h6 {
 }
 
 .reg__send {
-  flex: 0 1 230px;
+  flex: 1 1 45%;
   background: #2b5f8d;
   border: 1px solid #2b5f8d;
   border-radius: 5px;
@@ -884,7 +894,7 @@ h6 {
   }
 }
 .reg__cancel {
-  flex: 0 0 230px;
+  flex: 1 1 45%;
   background: #d13227;
   border: 1px solid #d13227;
   border-radius: 5px;
